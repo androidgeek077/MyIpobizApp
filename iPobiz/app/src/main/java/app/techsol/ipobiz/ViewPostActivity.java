@@ -6,6 +6,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
@@ -24,6 +25,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
+
+import app.techsol.ipobiz.services.FirebaseService;
 
 public class ViewPostActivity extends AppCompatActivity {
     private ViewFlipper simpleViewFlipper;
@@ -45,7 +48,7 @@ public class ViewPostActivity extends AppCompatActivity {
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this);
         mProductRecycVw.setLayoutManager(mLayoutManager);
 
-
+startService(new Intent(this, FirebaseService.class));
 
 
     }

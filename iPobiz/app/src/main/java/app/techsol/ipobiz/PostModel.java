@@ -1,6 +1,6 @@
 package app.techsol.ipobiz;
 
-class PostModel {
+public class PostModel {
     String posttitle, postimg;
 
     public PostModel() {
