@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">iPobiz</string>
+    <string name="email">Email</string>
+    <string name="enter_title">Enter Title</string>
+    <string name="upload_post">Upload Post</string>
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "373354300282",
+    "firebase_url": "https://ipobiz-57d19.firebaseio.com",
+    "project_id": "ipobiz-57d19",
+    "storage_bucket": "ipobiz-57d19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373354300282:android:95d50086b6ff3f93",
+        "android_client_info": {
+          "package_name": "app.techsol.ipobiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "373354300282-8vqds7o57rcrqcu364gkdv4vk6rfsm5l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.techsol.ipobiz",
+            "certificate_hash": "331951b7558c76aa5a2a1c0c4d0e9c25c323a93b"
+          }
+        },
+        {
+          "client_id": "373354300282-3vanpqf60rkjgceaeviduja909ii3dkr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJqEJ1wjCVAASs3yScFHzcuaR4kMs_a7U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "373354300282-3vanpqf60rkjgceaeviduja909ii3dkr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
