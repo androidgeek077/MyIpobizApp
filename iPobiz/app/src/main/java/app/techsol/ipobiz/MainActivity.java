@@ -37,7 +37,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MainActivity extends AppCompatActivity {
     ImageView mSelectPostImgvw;
-    EditText mTitleET;
+    EditText mTitleET, mPostBody;
     Button mSubmitPostBtn;
     String mTitleStr;
 
@@ -82,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
         profileImageView=findViewById(R.id.PostImgVw);
         pbProfileUpdating=findViewById(R.id.pbProfileUpdating);
         mTitleET=findViewById(R.id.TitleET);
+        mPostBody=findViewById(R.id.BodyET);
         profileImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -141,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     public void uploadProduct(String ImageUrl){
-        PostModel = new PostModel( mTitleET.getText().toString(),ImageUrl);
+        PostModel = new PostModel( mTitleET.getText().toString(),ImageUrl, mPostBody.getText().toString());
         mPostDbRef.push().setValue(PostModel).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {

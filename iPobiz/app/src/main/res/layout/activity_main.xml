@@ -36,7 +36,10 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
         <EditText
             android:layout_marginTop="35dp"
             android:id="@+id/TitleET"
@@ -51,6 +54,21 @@
             android:background="@drawable/ed_bstroke_selector"
             android:inputType="text"
             android:paddingStart="10dp" />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/BodyET"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="50dp"
+            android:hint="Enter body"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@drawable/ed_bstroke_selector"
+            android:inputType="text"
+            android:paddingStart="10dp" />
+</LinearLayout>
 
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView

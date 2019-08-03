@@ -13,7 +13,9 @@
         android:orientation="vertical"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:context=".Cusmoter.CustomerNavDrawerActivity">
-
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/main_recycler_vw"
             android:layout_width="match_parent"
@@ -21,7 +23,16 @@
             android:numColumns="auto_fit"
             android:stretchMode="columnWidth">
 
-        </androidx.recyclerview.widget.RecyclerView>
 
+        </androidx.recyclerview.widget.RecyclerView>
+    <View
+        android:alpha="0.6"
+        android:visibility="gone"
+        android:background="#000"
+        android:id="@+id/mDimBackGround"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>
     </LinearLayout>
+
 </ScrollView>
